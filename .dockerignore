@@ -1,0 +1,11 @@
+.git
+.env
+.venv
+**/__pycache__
+data/*.db*
+data/lake
+*.zip
+*.tar.gz
+
+dist
+output

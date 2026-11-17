@@ -1,0 +1,41 @@
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_acknowledgment_is_persisted (test_api.ApiTests.test_acknowledgment_is_persisted) ... ok
+test_anonymous_data_protected (test_api.ApiTests.test_anonymous_data_protected) ... ok
+test_authenticated_invalid_telemetry_preserved_as_rejected_bronze (test_api.ApiTests.test_authenticated_invalid_telemetry_preserved_as_rejected_bronze) ... ok
+test_bad_login_generic_and_rate_limited (test_api.ApiTests.test_bad_login_generic_and_rate_limited) ... ok
+test_call_permissions_and_transitions (test_api.ApiTests.test_call_permissions_and_transitions) ... ok
+test_cookie_flags_and_headers (test_api.ApiTests.test_cookie_flags_and_headers) ... ok
+test_csrf_and_cross_origin_rejected (test_api.ApiTests.test_csrf_and_cross_origin_rejected) ... ok
+test_dashboard_filters_apply_to_series_and_csv (test_api.ApiTests.test_dashboard_filters_apply_to_series_and_csv) ... ok
+test_empty_history_has_no_fabricated_samples (test_api.ApiTests.test_empty_history_has_no_fabricated_samples) ... ok
+test_equivalent_timezones_share_utc_hour (test_api.ApiTests.test_equivalent_timezones_share_utc_hour) ... ok
+test_expired_session_rejected (test_api.ApiTests.test_expired_session_rejected) ... ok
+test_file_replay_preserves_virtual_time_intervals (test_api.ApiTests.test_file_replay_preserves_virtual_time_intervals) ... ok
+test_forecast_crosses_real_provider_contract_and_is_cached (test_api.ApiTests.test_forecast_crosses_real_provider_contract_and_is_cached) ... ok
+test_forecast_refresh_updates_same_analysis_in_map_and_alert (test_api.ApiTests.test_forecast_refresh_updates_same_analysis_in_map_and_alert) ... ok
+test_frontend_pages_and_shared_assets_are_served (test_api.ApiTests.test_frontend_pages_and_shared_assets_are_served) ... ok
+test_historical_alert_keeps_its_original_class (test_api.ApiTests.test_historical_alert_keeps_its_original_class) ... ok
+test_ingestion_persistence_alert_and_lake (test_api.ApiTests.test_ingestion_persistence_alert_and_lake) ... ok
+test_invalid_dashboard_filter_rejected (test_api.ApiTests.test_invalid_dashboard_filter_rejected) ... ok
+test_login_cookie_logout_and_revocation (test_api.ApiTests.test_login_cookie_logout_and_revocation) ... ok
+test_migration_preserves_existing_users_and_is_repeatable (test_api.ApiTests.test_migration_preserves_existing_users_and_is_repeatable) ... ok
+test_no_role_escalation_from_login (test_api.ApiTests.test_no_role_escalation_from_login) ... ok
+test_no_silent_fake_weather_on_provider_failure (test_api.ApiTests.test_no_silent_fake_weather_on_provider_failure) ... ok
+test_no_telemetry_is_not_reported_as_normal (test_api.ApiTests.test_no_telemetry_is_not_reported_as_normal) ... ok
+test_notifications_dry_run_and_real_send_blocked (test_api.ApiTests.test_notifications_dry_run_and_real_send_blocked) ... ok
+test_old_measurement_is_stale_even_when_just_received (test_api.ApiTests.test_old_measurement_is_stale_even_when_just_received) ... ok
+test_password_hash_salted_and_verified (test_api.ApiTests.test_password_hash_salted_and_verified) ... ok
+test_production_requires_https_and_sets_secure_cookie (test_api.ApiTests.test_production_requires_https_and_sets_secure_cookie) ... ok
+test_replay_event_id_is_idempotent (test_api.ApiTests.test_replay_event_id_is_idempotent) ... ok
+test_replayed_and_future_telemetry_rejected (test_api.ApiTests.test_replayed_and_future_telemetry_rejected) ... ok
+test_resident_receives_and_acknowledges_exact_alert (test_api.ApiTests.test_resident_receives_and_acknowledges_exact_alert) ... ok
+test_service_monitor_requires_manager_and_returns_live_counters (test_api.ApiTests.test_service_monitor_requires_manager_and_returns_live_counters) ... ok
+test_simulation_cannot_claim_to_be_physical (test_api.ApiTests.test_simulation_cannot_claim_to_be_physical) ... ok
+test_stale_reading_is_not_current_risk (test_api.ApiTests.test_stale_reading_is_not_current_risk) ... ok
+test_wrong_device_key_and_invalid_reading (test_api.ApiTests.test_wrong_device_key_and_invalid_reading) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 14.973s
+
+OK

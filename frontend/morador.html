@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AlertaRio: monitoramento comunitário de enchentes e encostas. Protótipo acadêmico.">
+  <title>Painel do morador | AlertaRio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
+  <script defer src="charts.js"></script>
+  <script defer src="app.js">
+</script>
+</head>
+<!-- Página independente; estilos e comportamento são compartilhados. -->
+<body data-page="morador">
+<div class="shell">
+<aside class="sidebar">
+<a href="mapa.html" class="brand">
+<span class="logo">≈</span>Alerta<em>Rio</em>
+</a>
+<div class="tagline">CONECTAR. PREVENIR. CUIDAR.</div>
+<p class="nav-label">PRINCIPAL</p>
+<nav class="nav">
+<a href="mapa.html" class="" >
+<i>⌖</i>Visão geral</a>
+<a href="sensores.html" class="" >
+<i>◉</i>Sensores e leituras</a>
+<a href="morador.html" class="active" aria-current="page">
+<i>♧</i>Painel do morador</a>
+<a href="gestao.html" class="" >
+<i>▦</i>Central de gestão</a>
+</nav>
+<div class="side-bottom">
+<div class="connection">
+<span class="dot">
+</span>Rede de demonstração<p style="font-size:10px;color:#92acb1;margin:7px 0 0">5 sensores · dados simulados</p>
+</div>
+<div class="side-user">
+<span class="avatar">MO</span>
+<div>
+<b>Morador</b>
+<p style="margin:3px 0;color:#92acb1;font-size:10px">Acesso demonstrativo</p>
+</div>
+<button id="logout" aria-label="Sair" style="margin-left:auto;background:transparent;padding:4px">↪</button>
+</div>
+</div>
+</aside>
+<div class="content">
+<header class="topbar">
+<span>Comunidades <span class="muted">/ Painel do morador</span>
+</span>
+<div class="topbar-right">
+<span class="demo">AMBIENTE SIMULADO</span>
+<span class="muted">Rio de Janeiro, RJ</span>
+<span class="avatar">MO</span>
+</div>
+</header>
+<main class="main" id="page-content">
+<p role="status">Carregando dados da aplicação...</p>
+<noscript>Ative JavaScript para consultar leituras e gráficos.</noscript>
+</main>
+</div>
+</div>
+  <div id="toast" role="status">
+</div>
+</body>
+</html>

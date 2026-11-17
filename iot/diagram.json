@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "author": "AlertaRio",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 100,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sensor",
+      "top": -80,
+      "left": 280,
+      "attrs": {
+        "distance": "145"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot",
+      "top": 120,
+      "left": 350,
+      "attrs": {
+        "value": "358"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledred",
+      "top": -80,
+      "left": 50,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rred",
+      "top": 0,
+      "left": 50,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledgreen",
+      "top": -80,
+      "left": 130,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rgreen",
+      "top": 0,
+      "left": 130,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "sensor:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "sensor:GND",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "sensor:TRIG",
+      "uno:9",
+      "green",
+      []
+    ],
+    [
+      "sensor:ECHO",
+      "uno:10",
+      "blue",
+      []
+    ],
+    [
+      "pot:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "pot:GND",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "pot:SIG",
+      "uno:A0",
+      "orange",
+      []
+    ],
+    [
+      "uno:6",
+      "rred:1",
+      "red",
+      []
+    ],
+    [
+      "rred:2",
+      "ledred:A",
+      "red",
+      []
+    ],
+    [
+      "ledred:C",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:5",
+      "rgreen:1",
+      "green",
+      []
+    ],
+    [
+      "rgreen:2",
+      "ledgreen:A",
+      "green",
+      []
+    ],
+    [
+      "ledgreen:C",
+      "uno:GND.1",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

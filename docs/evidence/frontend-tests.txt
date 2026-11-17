@@ -1,0 +1,12 @@
+✔ ausência de dados não produz uma curva de zeros (0.826295ms)
+✔ timestamps com intervalos diferentes produzem espaçamento proporcional (13.362319ms)
+✔ horários e valores inválidos não viram dados válidos (0.250902ms)
+✔ texto interpolado em SVG é escapado (0.31016ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 92.520764

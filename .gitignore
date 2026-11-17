@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.db
+*.db-wal
+*.db-shm
+data/lake/
+output/
+dist/
+*.zip
+*.tar.gz

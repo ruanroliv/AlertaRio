@@ -1,0 +1,26 @@
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      APP_ENV: ${APP_ENV:-development}
+      APP_ORIGIN: ${APP_ORIGIN:-http://localhost:8080}
+      DATABASE_PATH: /app/data/alertario.db
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2:3b}
+      ENABLE_REAL_MESSAGES: ${ENABLE_REAL_MESSAGES:-false}
+      MESSAGE_TEST_RECIPIENTS: ${MESSAGE_TEST_RECIPIENTS:-}
+      TWILIO_ACCOUNT_SID: ${TWILIO_ACCOUNT_SID:-}
+      TWILIO_AUTH_TOKEN: ${TWILIO_AUTH_TOKEN:-}
+      TWILIO_SMS_FROM: ${TWILIO_SMS_FROM:-}
+      TWILIO_WHATSAPP_FROM: ${TWILIO_WHATSAPP_FROM:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - alertario-data:/app/data
+    restart: unless-stopped
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+volumes:
+  alertario-data:

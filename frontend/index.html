@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AlertaRio: monitoramento comunitário de enchentes e encostas. Protótipo acadêmico.">
+  <title>Login | AlertaRio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
+  <script defer src="charts.js"></script>
+  <script defer src="app.js">
+</script>
+</head>
+<!-- Página independente; estilos e comportamento são compartilhados. -->
+<body data-page="login">
+<div class="login">
+<section class="login-art">
+<a class="brand" href="index.html">
+<span class="logo">≈</span>Alerta<em>Rio</em>
+</a>
+<div>
+<span class="eyebrow" style="color:#70d2bc">TECNOLOGIA A SERVIÇO DA VIDA</span>
+<h1>Uma comunidade conectada é uma comunidade mais preparada.</h1>
+<p>Monitoramento de enchentes e encostas, com informação acessível para quem mais precisa.</p>
+</div>
+<p style="font-size:11px">CitizenTech · Clima, cidades e cuidado coletivo</p>
+<div class="contours">
+</div>
+</section>
+<section class="login-form">
+<span class="eyebrow">BEM-VINDO AO ALERTARIO</span>
+<h1>Conecte-se ao cuidado.</h1>
+<p class="muted">Acesse o ambiente de demonstração.</p>
+<form id="login-form">
+<div class="field">
+<label for="email">E-mail</label>
+<input id="email" type="email" required autocomplete="username" placeholder="seu@email.com" maxlength="254">
+</div>
+<div class="field">
+<label for="password">Senha de demonstração</label>
+<input id="password" type="password" required minlength="8" maxlength="128" autocomplete="current-password" placeholder="Mínimo de 8 caracteres">
+</div>
+<label style="font-size:12px">
+<input type="checkbox" id="show-password"> Mostrar senha</label>
+<div class="field">
+<label for="profile">Perfil de visualização</label>
+<select id="profile">
+<option value="resident">Morador</option>
+<option value="manager">Gestor / Defesa Civil</option>
+</select>
+</div>
+<p id="login-error" class="error" role="alert">
+</p>
+<button type="submit">Entrar na demonstração →</button>
+</form>
+<p class="login-note">Use qualquer e-mail válido e uma senha fictícia com 8 ou mais caracteres. Não use credenciais reais. A senha não é armazenada. Esta tela não implementa autenticação segura; o perfil de gestor é apenas uma visualização de teste.</p>
+</section>
+</div>
+  <div id="toast" role="status">
+</div>
+</body>
+</html>

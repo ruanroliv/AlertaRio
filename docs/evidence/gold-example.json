@@ -1,0 +1,94 @@
+{
+  "filters": {
+    "community": null,
+    "start": null,
+    "end": null,
+    "origin": "all"
+  },
+  "readings_count": 6,
+  "simulated_count": 6,
+  "avg_soil_pct": 61.666666666666664,
+  "max_water_cm": 180.0,
+  "high_risk_points": 1,
+  "max_rise_cm_min": 44.28540433849581,
+  "points_with_data": 2,
+  "series": [
+    {
+      "sensor_id": "AR-001",
+      "name": "Rio das Pedras",
+      "last_risk": "Alto",
+      "max_water_cm": 180.0,
+      "rise_cm_min": 44.28540433849581,
+      "samples": [
+        {
+          "id": 1,
+          "measured_at": "2026-11-17T05:08:38.966576+00:00",
+          "received_at": "2026-11-17T05:08:42.967472+00:00",
+          "water": 55.0,
+          "soil": 35.0,
+          "simulated": true
+        },
+        {
+          "id": 2,
+          "measured_at": "2026-11-17T05:08:40.968820+00:00",
+          "received_at": "2026-11-17T05:08:42.969132+00:00",
+          "water": 110.0,
+          "soil": 70.0,
+          "simulated": true
+        },
+        {
+          "id": 3,
+          "measured_at": "2026-11-17T05:08:42.970256+00:00",
+          "received_at": "2026-11-17T05:08:42.970546+00:00",
+          "water": 180.0,
+          "soil": 90.0,
+          "simulated": true
+        },
+        {
+          "id": 5,
+          "measured_at": "2026-11-17T05:11:17.321000+00:00",
+          "received_at": "2026-11-17T05:11:17.326215+00:00",
+          "water": 55.0,
+          "soil": 35.0,
+          "simulated": true
+        },
+        {
+          "id": 6,
+          "measured_at": "2026-11-17T05:11:28.322600+00:00",
+          "received_at": "2026-11-17T05:11:28.324887+00:00",
+          "water": 180.0,
+          "soil": 90.0,
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "sensor_id": "AR-002",
+      "name": "Rocinha",
+      "last_risk": "Normal",
+      "max_water_cm": 45.0,
+      "rise_cm_min": null,
+      "samples": [
+        {
+          "id": 4,
+          "measured_at": "2026-11-17T05:08:42.971623+00:00",
+          "received_at": "2026-11-17T05:08:42.971891+00:00",
+          "water": 45.0,
+          "soil": 50.0,
+          "simulated": true
+        }
+      ]
+    }
+  ],
+  "hourly": [
+    {
+      "hour_utc": "2026-11-17T05",
+      "samples": 6,
+      "avg_water_cm": 104.16666666666667,
+      "avg_soil_pct": 61.666666666666664
+    }
+  ],
+  "generated_at": "2026-11-17T05:13:22.413936+00:00",
+  "scope": "Última classificação e amostras dentro do recorte; não é previsão validada",
+  "not_a_big_data_scale_claim": true
+}
